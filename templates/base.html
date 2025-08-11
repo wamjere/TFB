@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}THE FATHER'S BLESSING {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css\style2.css' %}">
+</head>
+<body>
+
+    <h1>THE FATHER'S BLESSING</h1>
+    
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="{% static '/images/loggo.jpg' %}" alt="logo">
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">blog</a></li>
+            <li><a href="">donations</a></li>
+            <li><a href="">givings</a></li>
+            <li><a href="">media</a></li>
+            <li><a href="">ministries</a></li>
+
+        </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock  %}
+
+   <!--Footer Starts Here--> 
+   <!--Footer Ends Here--> 
+
+            
+
+    
+</body>
+</html>
