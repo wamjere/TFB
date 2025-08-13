@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}THE FATHER'S BLESSING {% endblock %}</title>
+    <title></title>
     <link rel="stylesheet" href="{% static 'css\style2.css' %}">
 </head>
 <body>
-
-    <h1>THE FATHER'S BLESSING</h1>
-    
+    <div class="main">
+        
+    </div>
     <nav class="navbar">
-        <div class="nav-logo">
-            <img src="{% static '/images/loggo.jpg' %}" alt="logo">
-        </div>
+        
 
         <ul>
+    
+            <div class="nav-logo">
+                <h2 class="logo">TFB</h2>
+            
+        </div>
             <li><a href="">Home</a></li>
             <li><a href="">about</a></li>
             <li><a href="">blog</a></li>
@@ -25,8 +28,12 @@
             <li><a href="">media</a></li>
             <li><a href="">ministries</a></li>
 
+            
+
         </ul>
     </nav>
+
+
 
     {% block content %}
     {% endblock  %}
