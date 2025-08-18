@@ -2,33 +2,86 @@
 {% load static %}
 {% block content %}
 
-    <div class hero="hero">
-        <div class="content">
-            <image class="my_cover" src="{% static '/images/pexels.jpg' %}">
-        </div>
-        <div>
-            <h1>The Fathers Blessing</h1>
-        </div>
-    </div>
-             
-             <p>
-                <image class="my_bright" src="{% static '/images/prince 1.jpg' %}">
-                We are delighted to welcome you to THE FATHER'S BLESSING-
-                a platform dedicated to empowering lives, restoring destinies<br>
-                and releasing devine favour through the spoken blessings
-                of our heavenly Father.
-                Here, you will encounter love, truth and transformation
-                as we walk together in the light of God's word.<br>
-                Whether you are joining us to grow spiritually,
-                connect with a faith-driven community or receive impartation
-                through teaching and prayer.
-                Know this: you are not here by accident, you are chosen
-                loved and blessed.
-                may your journey with us be filled with hope,
-                wisdom and the overwhelming presence of God's blessing.
-                welcome home.
-                #TheFathersBlessing#YouaAreBlesssed
-            </p>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="carousel">
+        <div class="slides">
+            <div class="slide"><img src="{% static 'images/TFB7.jpg' %}" alt="Slide 1"></div>
+            <div class="slide"><img src="{% static 'images/TFB1.jpg' %}"" alt="Slide 2"></div>
+            <div class="slide"><img src="{% static 'images/TFB5.jpg' %}" alt="Slide 3"></div>
+            <div class="slide"><img src="{% static 'images/TFB3.jpg' %}"" alt="Slide 4"></div>
+            <div class="slide"><img src="{% static 'images/TFB4.jpg' %}" alt="Slide 5"></div>
         </div>
     </div>
+
+    <div class="hero-content">
+        <h1>THE FATHERS' BLESSING</h1>
+        <h2>1st Peter 2:9</h2>
+        <p>
+            The Father's Blessings (TFB) is a Christian men’s ministry dedicated to mentoring, equipping, and building a strong community of Christian men. 
+        <div class="cta-buttons">
+            <a href="#" class="btn primary">Get Started</a>
+            <a href="#" class="btn secondary">Learn More</a>
+        </div>
+    </div>
+  </section>
+
+  <!--Events Section-->  
+  <section class="events-section">
+    <h2 class="events-title">Upcoming Events</h2>
+    <div class="events-container">
+        <!-- Event Card 1 -->
+        <div class="event-card">
+            <img src="{% static 'images/myself.jpg' %}" alt="Men's Conference">
+            <div class="event-content">
+                <h3>Men's Conference 2025</h3>
+                <p>Join us for a powerful weekend of worship, teaching, and fellowship.</p>
+                <p><strong>Date:</strong> 14th Sept 2025</p>
+                <p><strong>Location:</strong> Nairobi Christian Centre</p>
+                <p class="status paid">Payment: Paid</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <!-- Event Card 2 -->
+        <div class="event-card">
+            <img src="{% static 'images/prince.jpg' %}" alt="Prayer Breakfast">
+            <div class="event-content">
+                <h3>Men's Prayer Breakfast</h3>
+                <p>Start your morning with powerful prayer and uplifting fellowship.</p>
+                <p><strong>Date:</strong> 21st Sept 2025</p>
+                <p><strong>Location:</strong> Faith Hall, Westlands</p>
+                <p class="status unpaid">Payment: Pending</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <!-- Event Card 3 -->
+        <div class="event-card">
+            <img src="{% static 'images/men2.jpg' %}" alt="Retreat">
+            <div class="event-content">
+                <h3>Men's Spiritual Retreat</h3>
+                <p>A weekend away for reflection, prayer, and brotherhood.</p>
+                <p><strong>Date:</strong> 5th Oct 2025</p>
+                <p><strong>Location:</strong> Mount Olives Camp</p>
+                <p class="status paid">Payment: Paid</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+
+        <!-- Event Card 4 -->
+        <div class="event-card">
+            <img src="{% static 'images/bible.jpg' %}" alt="Bible Study">
+            <div class="event-content">
+                <h3>Men's Bible Study</h3>
+                <p>Dive deep into the Word and grow together in faith.</p>
+                <p><strong>Date:</strong> 12th Oct 2025</p>
+                <p><strong>Location:</strong> City Fellowship Hall</p>
+                <p class="status unpaid">Payment: Pending</p>
+                <a href="#" class="btn">View Details</a>
+            </div>
+        </div>
+  </div>
+  </section>
 {% endblock  %}

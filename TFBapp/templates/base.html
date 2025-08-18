@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}TFB  | HOME{% endblock  %}</title>
+    <link rel="stylesheet" href="{% static 'css\style2.css' %}">
+</head>
+<body>
+    <!--nav bar starts here-->
+    <nav>
+        <!--navigation bar logo-->
+        <div class="logo">
+            <img src="{% static 'images/logo2.png' %}" alt="TFB Logo">
+            <span></span>
+        </div>
+        
+        <!--nav links-->
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="{% url 'media' %}">Media</a></li>
+                <li><a href="{% url 'givings' %}">givings</a></li>
+                <li><a href="{% url 'contacts' %}">Contact</a></li>
+            </ul>
+        </div>
+        <!--login button-->
+        <a href="" class="login-btn">Login</a>
+
+
+    </nav>
+    <!--nav bar ends here-->
+
+
+
+    {% block content %}
+    {% endblock  %}
+
+   <!--Footer Starts Here--> 
+     <!--Footer Section Start-->
+  <footer class="footer">
+    <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-column">
+            <img src="{% static 'images/logo4.webp' %}" alt="TFB Logo" class="footer-logo">
+            <p>The Future Builders — Empowering communities through innovation and education.</p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <!-- Social Media Icons -->
+            <div class="footer-social">
+                <a href="#"><img src="{% static 'images/fb.webp' %}" alt="Facebook"></a>
+                <a href="#"><img src="{% static 'images/in.png' %}" alt="Twitter"></a>
+                <a href="#"><img src="{% static 'images/insta.webp' %}" alt="Instagram"></a>
+                <a href="#"><img src="{% static 'images/x.png' %}" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 The Future Builders. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+   <!--Footer Ends Here--> 
+
+            
+
+    
+</body>
+</html>
