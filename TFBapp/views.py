@@ -61,6 +61,10 @@ def givings(request):
 def blog(request):
     return render(request, "TFBapp/blog.html")
 
+#Get Started view
+def Get_Started(request):
+    return render(request, "TFBapp/Get Started.html")
+
 
 
 
