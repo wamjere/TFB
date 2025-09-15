@@ -16,9 +16,8 @@ urlpatterns = [
     path('givings/', views.givings, name='givings'),
     path('blog/', views.blog , name='blog'),
     path('media/', views.media , name='media'),
-   
-  
-  
+    path('gallery/', views.gallery , name='gallery'),
+    path('register/', views.register , name='register'),
     
 ]
 

@@ -63,8 +63,11 @@ def blog(request):
 
 #Get Started view
 def Get_Started(request):
-    return render(request, "TFBapp/Get Started.html")
+    return render(request, "TFBapp/Get_Started.html")
 
+#Register view
+def register(request):
+    return render(request, "TFBapp/register.html")
 
 
 

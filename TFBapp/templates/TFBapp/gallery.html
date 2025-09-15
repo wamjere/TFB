@@ -1,0 +1,1763 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}The Father's Blessings | Gallery {% endblock  %}
+{% block content %}
+
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <img src="{% static 'img/TFB7.jpg' %}" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row gy-0 gx-5">
+                        <div class="col-lg-0 col-xl-5"></div>
+                        <div class="col-xl-7 animated fadeInLeft">
+                            <div class="text-sm-center text-md-end">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">Our Gallery</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">Capturing Moments of Faith and Brotherhood</h1>
+                                <p class="mb-5 fs-5"> Each image captures the heart of our mission: men in worship, youth being mentored, families strengthened, and communities transformed. These are not just events they are milestones of grace, fellowship, and growth.
+                                </p>
+                                <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Register</a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                    <h2 class="text-white me-2">Follow Us:</h2>
+                                    <div class="d-flex justify-content-end ms-2">
+                                        <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-carousel-item">
+            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-12 animated fadeInUp">
+                            <div class="text-center">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">Our Gallery</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">Snapshots of Worship, Mentorship, and Service</h1>
+                                <p class="mb-5 fs-5">As you journey through these pictures, may you see more than faces and places. May you witness God’s hand at work, the power of brotherhood, and the beauty of men rising into purpose.
+                                </p>
+                                <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Get Involved</a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h2 class="text-white me-2">Follow Us:</h2>
+                                    <div class="d-flex justify-content-end ms-2">
+                                        <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+ 
+    <!-- Gallery Start -->
+    <div class="container-fluid gallery py-5">
+            <div class="container py-5">
+
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Journey in Pictures</h4>
+                    <h1 class="display-5 mb-4">A glimpse into the moments that shape The Father’s Blessing</h1>
+                    <p class="mb-0">The Father’s Blessing is a story told not only in words but also through the lives we touch and the moments we share. Each picture reflects the heart of our ministry men being transformed, families strengthened, and generations inspired.
+                    </p>
+                </div>                
+                    
+
+
+                <div class="tab-class text-center">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                <span class="text-dark" style="width: 150px;">All Gallery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                <span class="text-dark" style="width: 150px;">Mentorship Sessions</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                <span class="text-dark" style="width: 150px;">Conferences & Events</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                <span class="text-dark" style="width: 150px;">Family & Fatherhood</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                <span class="text-dark" style="width: 150px;">Youth & Next Generation</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/team/tm3.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/team/tm3.jpg' %}" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/team/tm1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/team/tm1.jpg' %}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/team/tm2.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/team/tm2.jpg' %}" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/team/tm4.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    k<h4 class="text-secondary">tfb prayer walk</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/team/tm4.jpg' %}" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/men1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/men1.jpg' %}" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/men2.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/men2.jpg' %}" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/test/daddy 3.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/test/daddy 3.jpg' %}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'img/test/Daddy.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'img/test/Daddy.jpg' %}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g24.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g24.jpg' %}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1' %}" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt.jpg' %}" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt8.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt8.jpg' %}" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt7.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/scitt7.jpg' %}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g7.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g7.jpg' %}" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g20.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g20.jpg' %}" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g4.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g4.jpg' %}" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g3.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g3.jpg' %}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g16.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g16.jpg' %}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g24.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g24.jpg' %}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1' %}" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt.jpg' %}" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g43.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g43.jpg' %}" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g42.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/gallery/g42.jpg' %}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g41.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g41.jpg' %}" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g40.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g40.jpg' %}" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g39.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g39.jpg' %}" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g38.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g38.jpg' %}" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g36.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g36.jpg' %}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g35.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g35.jpg' %}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g5.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g5.jpg' %}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g10.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g10.jpg' %}" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g11.jpg' %}" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g12.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g12.jpg' %}" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1' %}" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt.jpg' %}" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g32.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g32.jpg' %}" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g24.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/gallery/g24.jpg' %}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g25.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g25.jpg' %}" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g26.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g26.jpg' %}" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g27.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g27.jpg' %}" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g28.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g28.jpg' %}" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g29.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g29.jpg' %}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g30.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g30.jpg' %}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g24.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g24.jpg' %}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1' %}" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt.jpg' %}" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g12.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g12.jpg' %}" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g10.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/gallery/g10.jpg' %}" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g19.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g13.jpg' %}" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g14.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g14.jpg' %}" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g15.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g15.jpg' %}" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g20.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g20.jpg' %}" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g21.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g21.jpg' %}" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g22.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g22.jpg' %}" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/gallery/g24.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/gallery/g24.jpg' %}" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1' %}" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt.jpg' %}" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="gallery-img">
+                                                <img class="img-fluid rounded w-100" src="{% static 'assets1/img/scitt1.jpg' %}" alt="">
+                                                <div class="gallery-overlay p-4">
+                                                    <h4 class="text-secondary">Scitt Gallery</h4>
+                                                </div>
+                                                <div class="search-icon">
+                                                    <a href="{% static 'assets1/img/scitt1.jpg' %}" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- gallery End -->
+ 
+
+{% endblock  %}

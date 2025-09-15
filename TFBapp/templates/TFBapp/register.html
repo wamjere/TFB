@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}The Father's Blessings | Register{% endblock  %}
+{% block content %}
+
+    <!-- Mini Hero Section -->
+    <section class="tfb-mini-hero">
+        <div class="tfb-mini-hero-content">
+            <br><br><br>
+            <h1>Login to Father's Blessing Ministry</h1>
+            <p>Empowering men in faith, fellowship, and service at RCCG Solution Centre, Nairobi.</p>
+        </div>
+    </section>
+
+
+    <!-- TFB Membership Registration Section -->
+    <section class="tfb-register-section">
+        <div class="tfb-register-card">
+            <!-- Logo -->
+            <div class="tfb-register-logo">
+            <img src="images/logo.png" alt="Father's Blessing Ministry Logo">
+            </div>
+
+            <!-- Heading -->
+            <h2>TFB Ministry Member Registration</h2>
+            <p>Register as a new member or update your existing membership information.</p>
+
+            <!-- Registration Form -->
+            <form action="/register" method="POST" class="tfb-register-form">
+                <div class="tfb-form-group">
+                    <input type="text" name="fullname" placeholder="Full Name" required>
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="tfb-form-group">
+                    <select name="age_group" required>
+                    <option value="">Select Age Group</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46+">46+</option>
+                    </select>
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="text" name="church" placeholder="Church You Worship At (Optional)">
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="text" name="referral" placeholder="How Did You Hear About TFB? (Optional)">
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="text" name="address" placeholder="Residential Address" required>
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="text" name="occupation" placeholder="Occupation (Optional)">
+                </div>
+
+                <div class="tfb-form-group">
+                    <select name="member_type" required>
+                    <option value="">Membership Type</option>
+                    <option value="new">New Member</option>
+                    <option value="existing">Existing Member</option>
+                    </select>
+                </div>
+
+                <div class="tfb-form-group">
+                    <textarea name="notes" rows="4" placeholder="Additional Notes (Optional)"></textarea>
+                </div>
+
+                <button type="submit">Register</button>
+
+                <p class="tfb-register-note">Already registered? <a href="/login">Login here</a></p>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+{% endblock %}

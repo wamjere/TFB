@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}The Father's Blessings | Login{% endblock  %}
+{% block content %}
+
+    <!-- Mini Hero Section -->
+    <section class="tfb-mini-hero">
+    <div class="tfb-mini-hero-content">
+        <br><br><br>
+        <h1>Login to Father's Blessing Ministry</h1>
+        <p>Empowering men in faith, fellowship, and service at RCCG Solution Centre, Nairobi.</p>
+    </div>
+    </section>
+
+    <!-- Sign-Up Form Section -->
+    <section class="tfb-signup-section">
+        <div class="tfb-signup-card">
+            <!-- Logo -->
+            <div class="tfb-signup-logo">
+            <img src="images/logo.png" alt="Father's Blessing Ministry Logo">
+            </div>
+
+            <!-- Heading -->
+            <h2>Create Your Account</h2>
+            <p>Join Father's Blessing Ministry and start your journey with us.</p>
+
+            <!-- Sign-Up Form -->
+            <form action="/signup" method="POST" class="tfb-signup-form">
+                <div class="tfb-form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="tfb-form-group">
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+
+                <button type="submit">Sign Up</button>
+
+                <p class="tfb-signup-note">Already have an account? <a href="/login">Login here</a></p>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+{% endblock %}    
