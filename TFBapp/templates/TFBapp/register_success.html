@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}The Father's Blessings | Member Registartion{% endblock  %}
+{% block content %}
+
+<section class="tfb-register-section">
+  <div class="tfb-register-card">
+    <!-- Success Icon -->
+    <div class="tfb-success-icon">✔</div>
+
+    <!-- Heading -->
+    <h2 class="tfb-success-title">Registration Successful!</h2>
+    <p class="tfb-success-subtext">
+      Welcome to <strong>TFB Ministry</strong>. Your membership has been
+      successfully recorded.
+    </p>
+
+    <!-- Member Info -->
+    <div class="tfb-success-details">
+      <p><span>Member ID:</span> {{ member.member_id }}</p>
+      <p><span>Name:</span> {{ member.fullname }}</p>
+      <p><span>Email:</span> {{ member.email }}</p>
+      <p><span>Phone:</span> {{ member.phone }}</p>
+      <p><span>Membership Type:</span> {{ member.get_member_type_display }}</p>
+      <p><span>Date Joined:</span> {{ member.date_joined|date:"F j, Y, g:i a" }}</p>
+    </div>
+
+    <!-- CTA -->
+    <a href="{% url 'index' %}" class="tfb-success-btn">Go to Homepage</a>
+  </div>
+</section>
+
+
+{% endblock %}

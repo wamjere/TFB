@@ -1,23 +1,32 @@
 from django.urls import path
-from . import views 
-    
+from  .views import (
+    index,
+    gallery,
+    about, 
+    events,
+    events_details,
+    contact,
+    login, 
+    signup,
+    register,
+    register_success,
+    givings,
+    mentorship
+)
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('about/', views.about, name='about'),
-    path('join_us/', views.join_us, name='join_us'),
-    path('events/', views.events, name='events'),
-    path('contacts/', views.contacts, name='contacts'),
-    path('login/', views.login, name='login'),
-    path('sign_up/', views.sign_up, name='sign_up'),
-    path('reset_password/', views.reset_password, name='reset_password'),
-    path('ministries/', views.ministries, name='ministries'),
-    path('mentorship/', views.mentorship, name='mentorship'),
-    path('givings/', views.givings, name='givings'),
-    path('blog/', views.blog , name='blog'),
-    path('media/', views.media , name='media'),
-    path('gallery/', views.gallery , name='gallery'),
-    path('register/', views.register , name='register'),
-    
-]
+    path('', index,  name='index'),
+    path('gallery/', gallery, name='gallery'),
+    path('about/', about, name='about'),
+    path('events/', events, name='events'),
+    path('events_details/', events_details, name='events_details'),
+    path('contact/', contact, name='contact'),
+    path('login/', login, name='login'),
+    path('signup/', signup, name='signup'),
+    path('register', register, name='register'),
+    path("register/success/<int:member_id>/", register_success, name="register_success"),
+    path('givings', givings, name='givings'),
+    path('mentorship', mentorship, name='mentorship'),
 
+
+]

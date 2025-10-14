@@ -1,92 +1,80 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}The Father's Blessings | Register{% endblock  %}
+{% block title %}The Father's Blessings | Member Registartion{% endblock  %}
 {% block content %}
 
-    <!-- Mini Hero Section -->
-    <section class="tfb-mini-hero">
-        <div class="tfb-mini-hero-content">
-            <br><br><br>
-            <h1>Login to Father's Blessing Ministry</h1>
-            <p>Empowering men in faith, fellowship, and service at RCCG Solution Centre, Nairobi.</p>
-        </div>
-    </section>
-
-
-    <!-- TFB Membership Registration Section -->
     <section class="tfb-register-section">
         <div class="tfb-register-card">
             <!-- Logo -->
             <div class="tfb-register-logo">
-            <img src="images/logo.png" alt="Father's Blessing Ministry Logo">
+                <img src="{% static 'img/rccg.png' %}" alt="Father's Blessing Ministry Logo">
             </div>
 
             <!-- Heading -->
             <h2>TFB Ministry Member Registration</h2>
             <p>Register as a new member or update your existing membership information.</p>
 
-            <!-- Registration Form -->
-            <form action="/register" method="POST" class="tfb-register-form">
+            <!-- Django Registration Form -->
+            <form method="POST" action="{% url 'register' %}" class="tfb-register-form">
+                {% csrf_token %}
+
                 <div class="tfb-form-group">
-                    <input type="text" name="fullname" placeholder="Full Name" required>
+                    {{ form.fullname }}
+                    {{ form.fullname.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <input type="email" name="email" placeholder="Email Address" required>
+                    {{ form.email }}
+                    {{ form.email.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    {{ form.phone }}
+                    {{ form.phone.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <select name="age_group" required>
-                    <option value="">Select Age Group</option>
-                    <option value="18-25">18-25</option>
-                    <option value="26-35">26-35</option>
-                    <option value="36-45">36-45</option>
-                    <option value="46+">46+</option>
-                    </select>
+                    {{ form.age_group }}
+                    {{ form.age_group.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <input type="text" name="church" placeholder="Church You Worship At (Optional)">
+                    {{ form.church }}
+                    {{ form.church.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <input type="text" name="referral" placeholder="How Did You Hear About TFB? (Optional)">
+                    {{ form.referral }}
+                    {{ form.referral.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <input type="text" name="address" placeholder="Residential Address" required>
+                    {{ form.address }}
+                    {{ form.address.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <input type="text" name="occupation" placeholder="Occupation (Optional)">
+                    {{ form.occupation }}
+                    {{ form.occupation.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <select name="member_type" required>
-                    <option value="">Membership Type</option>
-                    <option value="new">New Member</option>
-                    <option value="existing">Existing Member</option>
-                    </select>
+                    {{ form.member_type }}
+                    {{ form.member_type.errors }}
                 </div>
 
                 <div class="tfb-form-group">
-                    <textarea name="notes" rows="4" placeholder="Additional Notes (Optional)"></textarea>
+                    {{ form.notes }}
+                    {{ form.notes.errors }}
                 </div>
 
                 <button type="submit">Register</button>
 
-                <p class="tfb-register-note">Already registered? <a href="/login">Login here</a></p>
+                <p class="tfb-register-note">Already registered? 
+                    <a href="{% url 'login' %}">Login here</a>
+                </p>
             </form>
         </div>
     </section>
-
-
-
-
-
 
 {% endblock %}

@@ -906,6 +906,9 @@
     display: flex;
     align-items: center; /* Align image and text vertically */
     justify-content: start; /* Align content to the left */
+    max-width: 80px; /* Reduced image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px;
 }
 
 .footer-img {

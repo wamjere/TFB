@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}The Father's Blessings | About{% endblock  %}
+{% block content %}
+    <!-- Carousel Start -->
+    <div class="header-carousel owl-carousel">
+        <div class="header-carousel-item">
+            <img src="{% static 'img/hero/hero3.jpg' %}" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row gy-0 gx-5">
+                        <div class="col-lg-0 col-xl-5"></div>
+                        <div class="col-xl-7 animated fadeInLeft">
+                            <div class="text-sm-center text-md-end">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">The Father’s Blessing</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">Nurturing men, guiding sons, shaping generations.</h1>
+                                <p class="mb-5 fs-5"> A ministry devoted to equipping men and mentoring young boys with spiritual, emotional, financial, and career discipleship raising Godly generations and impacting communities
+                                </p>
+                                <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Register</a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                    <h2 class="text-white me-2">Follow Us:</h2>
+                                    <div class="d-flex justify-content-end ms-2">
+                                        <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-carousel-item">
+            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid w-100" alt="Image">
+            <div class="carousel-caption">
+                <div class="container">
+                    <div class="row g-5">
+                        <div class="col-12 animated fadeInUp">
+                            <div class="text-center">
+                                <h4 class="text-primary text-uppercase fw-bold mb-4">The Father’s Blessing</h4>
+                                <h1 class="display-4 text-uppercase text-white mb-4">From men of faith to fathers of nations.</h1>
+                                <p class="mb-5 fs-5">The Father’s Blessing is not just for today  it’s a movement to secure tomorrow by raising men who will inspire generations with faith, wisdom, and excellence.
+                                </p>
+                                <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                    <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Get Involved</a>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <h2 class="text-white me-2">Follow Us:</h2>
+                                    <div class="d-flex justify-content-end ms-2">
+                                        <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="tfb-contact section light-background">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Reach out to Father’s Blessing Ministry, RCCG Solution Centre, Nairobi, Kenya. We would love to hear from you!</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+        <!-- Info Items -->
+        <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+                <h3>Address</h3>
+                <p>RCCG Solution Centre, Nairobi, Kenya</p>
+            </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+                <h3>Call Us</h3>
+                <p>+254 700 000 000</p>
+            </div>
+            </div>
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+                <h3>Email Us</h3>
+                <p>info@fathersblessingministry.org</p>
+            </div>
+            </div>
+        </div><!-- End Info Items -->
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+
+                <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit">Send Message</button>
+                </div>
+
+            </div>
+            </form>
+        </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+
+    </section>
+    <!-- /Contact Section -->
+
+
+{% endblock %}    

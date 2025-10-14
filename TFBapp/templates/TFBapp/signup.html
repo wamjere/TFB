@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}The Father's Blessings | Sign Up{% endblock %}
+
+{% block content %}
+
+<!-- Mini Hero Section -->
+<section class="tfb-mini-hero">
+  <div class="tfb-mini-hero-content">
+    <br><br><br>
+    <h1>Login to Father's Blessing Ministry</h1>
+    <p>Empowering men in faith, fellowship, and service at RCCG Solution Centre, Nairobi.</p>
+  </div>
+</section>
+
+<!-- Sign-Up Form Section -->
+<section class="tfb-signup-section">
+  <div class="tfb-signup-card">
+    <!-- Logo -->
+    <div class="tfb-signup-logo">
+      <img src="{% static 'images/logo.png' %}" alt="Father's Blessing Ministry Logo">
+    </div>
+
+    <!-- Heading -->
+    <h2>Create Your Account</h2>
+    <p>Join Father's Blessing Ministry and start your journey with us.</p>
+
+    <!-- Sign-Up Form -->
+    <form method="POST" class="tfb-signup-form">
+      {% csrf_token %}
+
+      <!-- Email -->
+      <div class="tfb-form-group">
+        <input type="email" name="email" placeholder="Enter your email" value="{{ form.email.value }}" required>
+        {% if form.email.errors %}
+          <div class="tfb-error">{{ form.email.errors.0 }}</div>
+        {% endif %}
+      </div>
+
+      <!-- Password -->
+      <div class="tfb-form-group">
+        <input type="password" name="password" placeholder="Enter your password" required>
+        {% if form.password.errors %}
+          <div class="tfb-error">{{ form.password.errors.0 }}</div>
+        {% endif %}
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="tfb-form-group">
+        <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+        {% if form.confirm_password.errors %}
+          <div class="tfb-error">{{ form.confirm_password.errors.0 }}</div>
+        {% endif %}
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+      <p class="tfb-signup-note">Already have an account? <a href="#">Login here</a></p>
+    </form>
+  </div>
+</section>
+
+{% endblock %}
