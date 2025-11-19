@@ -1,4 +1,8 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+from django.utils import timezone
+from django import forms
 
 # Create your models here.
 
@@ -53,3 +57,77 @@ class Member(models.Model):
     def __str__(self):
         return f"{self.fullname} - {self.member_id}"
 
+
+
+class Event(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    event_date = models.DateTimeField()
+    location = models.CharField(max_length=255)  
+    image = models.ImageField(upload_to='events/')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
+
+    def registration_count(self):
+        return self.registrations.count()
+
+    def clean(self):
+        # Prevent adding an event in the past
+        if self.event_date < timezone.now():
+            raise ValidationError("You cannot create an event in the past.")
+
+    class Meta:
+        ordering = ['event_date']  
+
+
+class EventRegistration(models.Model):
+    event = models.ForeignKey(Event, on_delete=models.CASCADE, related_name='registrations')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    registered_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} -> {self.event.title}"
+
+class GalleryCategory(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+class GalleryImage(models.Model):
+    title = models.CharField(max_length=200, blank=True)
+    image = models.ImageField(upload_to='gallery/')
+    category = models.ForeignKey(GalleryCategory, on_delete=models.SET_NULL, null=True, blank=True, related_name='images')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title or f"Image {self.id}"
+
+
+class MemberProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    date_joined = models.DateTimeField(default=timezone.now)
+ 
+
+    def __str__(self):
+        return self.user.username
+
+
+
+class SignUpForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
+    confirm_password = forms.CharField(widget=forms.PasswordInput, label="Confirm Password")
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password']
+
+    def clean(self):
+        cleaned_data = super().clean()
+        password = cleaned_data.get("password")
+        confirm_password = cleaned_data.get("confirm_password")
+        if password != confirm_password:
+            raise ValidationError("Passwords do not match")
+        return cleaned_data

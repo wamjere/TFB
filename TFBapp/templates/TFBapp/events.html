@@ -82,93 +82,40 @@
                         Your participation is essential in spreading love and support through service.
                 </p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid rounded-top w-100" alt="Image">
-                        </div>
-                        <div class="rounded-bottom p-4">
-                            <a href="#" class="h4 d-inline-block mb-4">Regional Conference</a>
-                            <p class="event-datetime">📅 15 Oct 2025 | 🕒 10:00 AM</p>
-                            
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Register</a>
-                        </div>
+            {% if events_by_month %}
+                {% for month, events in events_by_month.items %}
+                    <h2 class="mb-4">{{ month }}</h2>
+                    <div class="row g-4">
+                        {% for event in events %}
+                            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="service-item">
+                                    <div class="service-img">
+                                        <img src="{{ event.image.url }}" class="img-fluid rounded-top w-100" alt="Image">
+                                    </div>
+                                    <div class="rounded-bottom p-4">
+                                        <a href="#" class="h4 d-inline-block mb-4">{{ event.title }}</a>
+                                        <p class="event-datetime">📅 {{ event.event_date|date:"d M Y" }} | 🕒 {{ event.event_date|time:"h:i A" }}</p>
+                                        <p class="event-location">📍 {{ event.location }}</p>
+                                        <p class="mb-4">{{ event.description|truncatewords:20 }}</p>
+                                        {% if user.is_authenticated %}
+                                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'event_register' event.id %}">Register</a>
+                                        {% else %}
+                                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'login' %}"> Register</a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
                     </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12 text-center">
+                    <p class="h5 py-5">No upcoming events at the moment. Please check back later!</p>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid rounded-top w-100" alt="Image">
-                        </div>
-                        <div class="rounded-bottom p-4">
-                            <a href="#" class="h4 d-inline-block mb-4">Family Fun Day</a>
-                            <p class="event-datetime">📅 15 Oct 2025 | 🕒 10:00 AM</p>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid rounded-top w-100" alt="Image">
-                        </div>
-                        <div class="rounded-bottom p-4">
-                            <a href="#" class="h4 d-inline-block mb-4">Youth Week</a>
-                            <p class="event-datetime">📅 15 Oct 2025 | 🕒 10:00 AM</p>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid rounded-top w-100" alt="Image">
-                        </div>
-                        <div class="rounded-bottom p-4">
-                            <a href="#" class="h4 d-inline-block mb-4">QEG Summit</a>
-                            <p class="event-datetime">📅 15 Oct 2025 | 🕒 10:00 AM</p>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid rounded-top w-100" alt="Image">
-                        </div>
-                        <div class="rounded-bottom p-4">
-                            <a href="#" class="h4 d-inline-block mb-4">South Sudan Mission</a>
-                            <p class="event-datetime">📅 15 Oct 2025 | 🕒 10:00 AM</p>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="service-item">
-                        <div class="service-img">
-                            <img src="{% static 'img/hero/hero1.jpg' %}" class="img-fluid rounded-top w-100" alt="Image">
-                        </div>
-                        <div class="rounded-bottom p-4">
-                            <a href="#" class="h4 d-inline-block mb-4">TFB week</a>
-                            <p class="event-datetime">📅 15 Oct 2025 | 🕒 10:00 AM</p>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endif %}
+
+
+
             
             <div class="text-center mt-4">
                 <a class="btn btn-secondary rounded-pill py-2 px-4 hozambe" href="#">View Events</a>

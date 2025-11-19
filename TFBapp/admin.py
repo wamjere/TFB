@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import Member
+from .models import Member, Event, EventRegistration, GalleryCategory, GalleryImage, MemberProfile
 
-# Register your models here.
+
 @admin.register(Member)
 class MemberAdmin(admin.ModelAdmin):
     """
@@ -22,3 +22,39 @@ class MemberAdmin(admin.ModelAdmin):
 
     # Default ordering (newest members first)
     ordering = ("-date_joined",)
+
+
+@admin.register(Event)
+class EventAdmin(admin.ModelAdmin):
+    list_display = ('title', 'event_date', 'registration_count')
+    search_fields = ('title',)
+
+
+@admin.register(EventRegistration)
+class EventRegistrationAdmin(admin.ModelAdmin):
+    list_display = ('user', 'event', 'registered_at')
+    list_filter = ('event',)
+
+
+
+
+@admin.register(GalleryCategory)
+class GalleryCategoryAdmin(admin.ModelAdmin):
+    list_display = ('name',)          
+    search_fields = ('name',)       
+
+@admin.register(GalleryImage)
+class GalleryImageAdmin(admin.ModelAdmin):
+    list_display = ('title', 'category', 'uploaded_at') 
+    list_filter = ('category',)                           
+    search_fields = ('title',)                          
+    list_editable = ('category',)                        
+
+
+
+# Class-based registration for MemberProfile
+@admin.register(MemberProfile)
+class MemberProfileAdmin(admin.ModelAdmin):
+    list_display = ('user', 'user__username', 'date_joined')      
+    search_fields = ('user__username', 'user__email') 
+    list_filter = ('date_joined',)            
